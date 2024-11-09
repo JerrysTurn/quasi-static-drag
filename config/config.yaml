@@ -26,8 +26,8 @@ pullee:
 
 obstacles:
   [
-    {"type": "circle"},
-    {"type": "ellipse"},
+    # {"type": "circle"},
+    # {"type": "ellipse"},
   ]
 
 env:
