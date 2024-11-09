@@ -1,0 +1,7 @@
+numpy
+matplotlib
+pyyaml
+pygame
+scipy
+collision
+corgipath

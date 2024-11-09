@@ -1,0 +1,47 @@
+display:
+  WIDTH : 1600
+  HEIGHT: 1200
+  unit:   0.001  # [m/pixel]
+
+simulator:
+  fps      : 40   # [fps]
+  sim_step : 0.025  # dt [s]
+  
+dragger:
+  init_position : [0.0, 0.06]  # [m]
+  init_rotation : 0.0           # [deg]
+
+  contact_force : 7.0
+  contact_radius: 0.02
+
+  unit_v_speed  : 0.02  # [m/s]
+  unit_r_speed  : 60.0  # [deg/s]
+
+pullee:
+  init_position : [0.0, 0.0]  # [m]
+  init_rotation : 0.0         # [deg]
+
+  WIDTH : 0.1
+  HEIGHT: 0.2
+
+obstacles:
+  [
+    {"type": "circle"},
+    {"type": "ellipse"},
+  ]
+
+env:
+  weight  : 1.0       # [kg]
+  gravity : 9.80665   # [m/s^2]
+  mu1     : 0.15
+  mu2     : 0.8
+  c_o     : 0.6
+  c_p     : 0.9642
+  delta   : 1.324
+
+planner:
+  world_bound : [-1.0, 1.0, -1.0, 1.0]
+  start       : [0.0, 0.0, 0.0]           # [m, rad]
+  goal        : [0.4, 0.3, 1.57]           # [m, rad]
+  grid_size   : 0.02                     # [m]
+  live_plot   : False
